@@ -16,7 +16,7 @@
 }
 
 /* Tailwind color utilities */
-.light-hover {
+.light-hover:hover {
   background-color: var(--light-hover);
 }
 
@@ -35,4 +35,13 @@
 
 .font-ovo {
   font-family: var(--font-ovo);
+}
+
+/* Shadow utilites */
+.shadow-black:hover {
+  box-shadow: 4px 4px 0 #000;
+}
+
+.shadow-white:hover {
+  box-shadow: 4px 4px 0 #fff;
 }

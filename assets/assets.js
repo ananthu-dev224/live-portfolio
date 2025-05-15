@@ -10,6 +10,9 @@ import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
+import aws from './aws.png';
+import postman from './postman.png';
+import docker from './docker.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -49,6 +52,9 @@ export const assets = {
     figma,
     git,
     mongodb,
+    aws,
+    postman,
+    docker,
     right_arrow_white,
     logo,
     logo_dark,
@@ -107,11 +113,11 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, TypeScript, React Js, Next Js, Node Js, Express Js, MongoDB, SQL, AWS, Redux, Web Sockets, DSA, Firebase, Microservices' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Pursuing Bachelors in Computer Applications' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built 2 industry level projects from scratch and many mini projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.aws, assets.docker, assets.postman
 ];
