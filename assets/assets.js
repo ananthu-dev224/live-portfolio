@@ -30,9 +30,11 @@ import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
-import web_icon from './web-icon.png';
-import mobile_icon from './mobile-icon.png';
-import ui_icon from './ui-icon.png';
+import web_icon from './web.png';
+import ui_icon from './ui.png';
+import api_icon from './api.png';
+import auth_icon from './auth.png';
+import deploy_icon from './deploy.png';
 import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
@@ -73,7 +75,9 @@ export const assets = {
     close_black,
     close_white,
     web_icon,
-    mobile_icon,
+    api_icon,
+    auth_icon,
+    deploy_icon,
     ui_icon,
     graphics_icon,
     right_arrow,
@@ -106,10 +110,11 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Full-Stack Web Development', description: 'End-to-end development using modern JavaScript frameworks like React and Node.js ...', link: '' },
+    { icon: assets.ui_icon, title: 'Responsive UI Design', description: 'Clean, mobile-friendly interfaces with Tailwind CSS and component libraries ...', link: '' },
+    { icon: assets.api_icon, title: 'API & Database Integration', description: 'RESTful APIs with Express.js and MongoDB/PostgreSQL support ...', link: '' },
+    { icon: assets.auth_icon, title: 'Authentication & Security', description: 'Secure login systems with JWT, OAuth, and role-based access ...', link: '' },
+    { icon: assets.deploy_icon, title: 'Deployment & Optimization', description: 'Hosting on Vercel/AWS with performance and SEO improvements. ...', link: '' },
 ]
 
 export const infoList = [

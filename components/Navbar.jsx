@@ -1,7 +1,7 @@
 "use client";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 const Navbar = () => {
   const sideMenuRef = useRef();
