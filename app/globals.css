@@ -49,3 +49,7 @@
 .grid-cols-auto {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+.bg-footer {
+  background-image: url('/footer-bg-color.png');
+}
