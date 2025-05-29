@@ -2,6 +2,7 @@
 import React, {use, useState} from "react";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
+import { FaXTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
 
 
 const Contact = () => {
@@ -49,6 +50,36 @@ const Contact = () => {
                 {result}
             </p>
       </form>
+      {/* Footer */}
+      <div className="mt-20 border-t pt-6 flex flex-col items-center text-center text-sm text-gray-600">
+        <div className="flex gap-5 mb-4">
+          <a
+            href="https://twitter.com/dev_aks224"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            <FaXTwitter size={20} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ananthu-k-s-403512291/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            <FaLinkedinIn size={20} />
+          </a>
+          <a
+            href="https://instagram.com/___ananthu__"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            <FaInstagram size={20} />
+          </a>
+        </div>
+        <p className="font-ovo text-sm">© 2025 Ananthu K S. All rights reserved.</p>
+      </div>
     </div>
   );
 };
