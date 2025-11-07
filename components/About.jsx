@@ -12,20 +12,22 @@ const About = () => {
       <h2 className="text-center text-5xl font-ovo">About me</h2>
 
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-        <div className="w-64 sm:w-80 rounded-3xl max-w-none">
+        <div className="flex-shrink-0 w-64 sm:w-80 lg:w-96 rounded-3xl max-w-none">
           <Image
             src={assets.user_image}
             alt="user"
-            className="w-full rounded-3xl"
+            className="w-full rounded-3xl object-cover"
           />
         </div>
         <div className="flex-1 px-4 sm:px-0 mt-6 sm:mt-0">
           <p className="mb-10 max-w-2xl font-ovo text-sm sm:text-base">
-            I am a self-taught Full Stack Web Developer passionate about
-            building scalable, user-friendly applications. I started coding in
-            school with C/C++ and now work primarily with the MERN stack, always
-            eager to learn and explore new tech. Currently, I’m working as a web
-            developer while pursuing a BCA through distance education.
+            I’m a Full Stack Web Developer specializing in building scalable and
+            user-focused web applications. With experience in a product-based
+            company and a portfolio of 30+ open-source and 2 industry-level
+            projects, I bring strong technical and problem-solving skills.
+            Skilled in the MERN stack, I’m passionate about creating efficient,
+            modern web experiences and currently open to freelance
+            opportunities.
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-2xl">

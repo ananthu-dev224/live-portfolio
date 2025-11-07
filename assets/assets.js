@@ -110,9 +110,9 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, TypeScript, React Js, Next Js, Node Js, Express Js, MongoDB, SQL, AWS, Redux, Web Sockets, DSA, Firebase, Microservices' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, TypeScript, AJAX, Jquery, GSAP, React Js, Next Js, Node Js, Express Js, MongoDB, SQL, AWS, Redux, Web Sockets, DSA, Firebase, Microservices, Lighthouse, SEO' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Pursuing Bachelors in Computer Applications' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built 2 industry level projects from scratch and many mini projects' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built 2 industry-level projects from scratch and contributed to 30+ open-source contributions on GitHub.' }
 ];
 
 export const toolsData = [
