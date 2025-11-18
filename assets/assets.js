@@ -102,11 +102,11 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Full-Stack Web Development', description: 'End-to-end development using modern JavaScript frameworks like React and Node.js ...', link: '' },
-    { icon: assets.ui_icon, title: 'Responsive UI Design', description: 'Clean, mobile-friendly interfaces with Tailwind CSS and component libraries ...', link: '' },
-    { icon: assets.api_icon, title: 'API & Database Integration', description: 'RESTful APIs with Express.js and MongoDB/PostgreSQL support ...', link: '' },
-    { icon: assets.auth_icon, title: 'Authentication & Security', description: 'Secure login systems with JWT, OAuth, and role-based access ...', link: '' },
-    { icon: assets.deploy_icon, title: 'Deployment & Optimization', description: 'Hosting on Vercel/AWS with performance and SEO improvements. ...', link: '' },
+    { icon: assets.web_icon, title: 'Full-Stack Web & App Development', description: 'Custom websites and apps built end-to-end to match your business needs', link: '' },
+    { icon: assets.ui_icon, title: 'Responsive UI Design', description: 'Clean, modern, mobile-friendly interfaces designed for smooth user experience', link: '' },
+    { icon: assets.api_icon, title: 'API & Database Integration', description: 'Reliable backend systems with seamless data flow and secure integrations', link: '' },
+    { icon: assets.auth_icon, title: 'Authentication & Security', description: 'Strong and secure user access systems with industry-standard protection', link: '' },
+    { icon: assets.deploy_icon, title: 'Deployment & Optimization', description: 'Fast and optimized deployments with performance tuning and SEO improvements', link: '' },
 ]
 
 export const infoList = [
