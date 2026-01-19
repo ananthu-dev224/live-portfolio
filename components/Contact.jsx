@@ -78,7 +78,7 @@ const Contact = () => {
             <FaInstagram size={20} />
           </a>
         </div>
-        <p className="font-ovo text-sm">© 2025 Ananthu K S. All rights reserved.</p>
+        <p className="font-ovo text-sm">© {new Date().getFullYear()} Ananthu K S. All rights reserved.</p>
       </div>
     </div>
   );
