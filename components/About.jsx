@@ -21,13 +21,13 @@ const About = () => {
         </div>
         <div className="flex-1 px-4 sm:px-0 mt-6 sm:mt-0">
           <p className="mb-10 max-w-2xl font-ovo text-sm sm:text-base">
-            I’m a Full Stack Web Developer specializing in building scalable and
-            user-focused web applications. With experience in a product-based
-            company and a portfolio of 30+ open-source and 2 industry-level
-            projects, I bring strong technical and problem-solving skills.
-            Skilled in the MERN stack, I’m passionate about creating efficient,
-            modern web experiences and currently open to freelance
-            opportunities.
+            I’m a Full Stack Developer with 2+ years of professional experience
+            building scalable, high-performance, and user-centric web
+            applications. With a portfolio of 30+ open-source projects and 2
+            production-level applications, I bring strong problem-solving
+            abilities and hands-on development expertise. Specialized in the
+            MERN stack, I’m passionate about crafting efficient, modern digital
+            experiences and am currently open to freelance opportunities.
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-2xl">
