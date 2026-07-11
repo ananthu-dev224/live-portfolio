@@ -12,8 +12,9 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Ananthu K S",
-  description: "",
+  title: "Ananthu K S | Software Engineer",
+  description:
+    "Software Engineer with nearly 2 years of experience across 20+ production projects. Currently at Onbyz, building web applications with JavaScript, React, and Node.js.",
 };
 
 export default function RootLayout({ children }) {

@@ -1,69 +1,149 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
-import { assets, infoList, toolsData } from "@/assets/assets";
+import { toolsData, skillsData } from "@/assets/assets";
+import {
+  FadeIn,
+  StaggerContainer,
+  StaggerItem,
+  SectionHeading,
+} from "@/components/AnimatedSection";
+
+const stats = [
+  { value: "2+", label: "Years Experience" },
+  { value: "20+", label: "Projects Delivered" },
+  { value: "Onbyz", label: "Current Company" },
+];
+
+function AboutBio() {
+  return (
+    <>
+      <p className="font-ovo text-gray-700 leading-relaxed mb-4">
+        I&apos;m a Software Engineer with nearly 2 years of professional
+        experience building scalable web applications. I work primarily with
+        JavaScript, React, and Node.js — delivering production-ready features,
+        optimizing performance, and maintaining clean, maintainable codebases.
+      </p>
+      <p className="font-ovo text-gray-600 leading-relaxed text-sm sm:text-base">
+        Currently at{" "}
+        <span className="text-gray-800 font-medium">Onbyz</span>, where I
+        develop service-based applications and content-driven platforms.
+        Previously at Trusttech IT Solutions, working across multiple client
+        projects in the Forex trading space.
+      </p>
+    </>
+  );
+}
+
+function AboutSkills({ compact = false }) {
+  return (
+    <>
+      <h4 className="text-sm uppercase tracking-widest text-gray-400 mb-3 sm:mb-4 font-medium">
+        Tech Stack
+      </h4>
+      <div className={`flex flex-wrap gap-2 ${compact ? "mb-5" : "mb-8"}`}>
+        {skillsData.map((skill, index) => (
+          <span
+            key={index}
+            className="skill-pill text-xs sm:text-sm border border-gray-200 rounded-full px-3 py-1.5 text-gray-600 font-ovo"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+
+      <h4 className="text-sm uppercase tracking-widest text-gray-400 mb-3 sm:mb-4 font-medium">
+        Tools
+      </h4>
+      <StaggerContainer
+        className="flex flex-wrap items-center gap-3"
+        stagger={0.04}
+      >
+        {toolsData.map((tool, index) => (
+          <StaggerItem key={index}>
+            <div className="flex items-center justify-center w-11 h-11 border border-gray-200 rounded-xl card-hover bg-gray-50/50">
+              <Image src={tool} alt="Tool" className="w-5" />
+            </div>
+          </StaggerItem>
+        ))}
+      </StaggerContainer>
+    </>
+  );
+}
 
 const About = () => {
   return (
     <div
       id="about"
-      className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-[12%] py-10 scroll-mt-20"
+      className="w-full max-w-6xl 2xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-[8%] 2xl:px-[6%] py-20 scroll-mt-20"
     >
-      <h4 className="text-center mb-2 text-lg font-ovo">Introduction</h4>
-      <h2 className="text-center text-5xl font-ovo">About me</h2>
+      <SectionHeading
+        label="Introduction"
+        title="About me"
+        className="mb-12"
+      />
 
-      <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-        <div className="flex-shrink-0 w-64 sm:w-80 lg:w-96 rounded-3xl max-w-none">
-          <Image
-            src={assets.user_image}
-            alt="user"
-            className="w-full rounded-3xl object-cover"
-          />
+      <FadeIn>
+        <div className="grid grid-cols-3 gap-4 sm:gap-6 mb-12 max-w-2xl 2xl:max-w-3xl mx-auto">
+          {stats.map(({ value, label }) => (
+            <div
+              key={label}
+              className="text-center py-5 px-3 rounded-2xl bg-purple-50/60 border border-purple-100"
+            >
+              <p className="text-2xl sm:text-3xl 2xl:text-4xl font-ovo font-semibold text-gray-900">
+                {value}
+              </p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-1 font-ovo">
+                {label}
+              </p>
+            </div>
+          ))}
         </div>
-        <div className="flex-1 px-4 sm:px-0 mt-6 sm:mt-0">
-          <p className="mb-10 max-w-2xl font-ovo text-sm sm:text-base">
-            I’m a Full Stack Developer with 2+ years of professional experience
-            building scalable, high-performance, and user-centric web
-            applications. With a portfolio of 30+ open-source projects and 2
-            production-level applications, I bring strong problem-solving
-            abilities and hands-on development expertise. Specialized in the
-            MERN stack, I’m passionate about crafting efficient, modern digital
-            experiences and am currently open to freelance opportunities.
-          </p>
+      </FadeIn>
 
-          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-2xl">
-            {infoList.map(({ icon, iconDark, title, description }, index) => (
-              <li
-                key={index}
-                className="border border-gray-400 rounded-xl p-4 sm:p-6 cursor-pointer light-hover hover:-translate-y-1 duration-500 shadow-black"
-              >
-                <Image
-                  src={icon}
-                  alt={title}
-                  className="w-6 sm:w-7 mt-2 sm:mt-3"
-                />
-                <h3 className="my-3 sm:my-4 font-semibold text-gray-700 text-sm sm:text-base">
-                  {title}
-                </h3>
-                <p className="text-gray-600 text-sm">{description}</p>
-              </li>
-            ))}
-          </ul>
+      <div className="rounded-3xl border border-gray-200 bg-white overflow-hidden shadow-sm">
+        <div className="px-6 sm:px-8 lg:px-10 2xl:px-12 py-6 sm:py-8 lg:py-10">
+          <FadeIn>
+            <AboutBio />
+          </FadeIn>
+        </div>
 
-          <h4 className="my-5 sm:my-6 text-gray-700 font-ovo text-base sm:text-lg">
-            Tools I use
-          </h4>
-          <ul className="flex flex-wrap sm:flex-nowrap items-center gap-3 sm:gap-5">
-            {toolsData.map((tool, index) => (
-              <li
-                key={index}
-                className="flex items-center justify-center w-10 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer light-hover hover:-translate-y-1 duration-500"
-              >
-                <Image src={tool} alt="Tool" className="w-4 sm:w-7" />
-              </li>
-            ))}
-          </ul>
+        <div className="border-t border-gray-100 px-6 sm:px-8 lg:px-10 2xl:px-12 py-6 sm:py-8 lg:py-10">
+          <FadeIn delay={0.1}>
+            <AboutSkills />
+          </FadeIn>
         </div>
       </div>
+
+      <FadeIn delay={0.2} className="mt-8">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-5 sm:p-6 rounded-2xl border border-dashed border-gray-300 bg-gray-50/50">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">
+              Outside of work
+            </p>
+            <p className="font-ovo text-sm sm:text-base text-gray-600">
+              Founder of{" "}
+              <a
+                href="https://enovixtech.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 hover:underline font-medium"
+              >
+                Enovix Tech
+              </a>
+              — a freelance development team I run alongside my full-time role.
+            </p>
+          </div>
+          <a
+            href="https://enovixtech.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 text-sm font-ovo text-gray-600 border border-gray-300 rounded-full px-5 py-2 hover:border-purple-400 hover:bg-white transition-all"
+          >
+            enovixtech.in →
+          </a>
+        </div>
+      </FadeIn>
     </div>
   );
 };
