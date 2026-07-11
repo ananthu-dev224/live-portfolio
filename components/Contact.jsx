@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import { FaXTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedinIn, FaInstagram, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { FadeIn, SectionHeading } from "@/components/AnimatedSection";
 
@@ -121,6 +121,21 @@ const Contact = () => {
           <div className="flex gap-6 mb-5">
             {[
               {
+                href: "mailto:ananthu9526official@gmail.com",
+                icon: FaEnvelope,
+                label: "Email",
+              },
+              {
+                href: "tel:+919526952719",
+                icon: FaPhone,
+                label: "Phone",
+              },
+              {
+                href: "https://github.com/ananthu-dev224",
+                icon: FaGithub,
+                label: "GitHub",
+              },
+              {
                 href: "https://twitter.com/dev_aks224",
                 icon: FaXTwitter,
                 label: "Twitter",
@@ -139,14 +154,28 @@ const Contact = () => {
               <a
                 key={label}
                 href={href}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={href.startsWith("mailto") || href.startsWith("tel") ? undefined : "_blank"}
+                rel={href.startsWith("mailto") || href.startsWith("tel") ? undefined : "noopener noreferrer"}
                 aria-label={label}
                 className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:border-purple-400 hover:text-purple-600 hover:bg-purple-50 transition-all duration-300"
               >
                 <Icon size={18} />
               </a>
             ))}
+          </div>
+          <div className="flex flex-col gap-1 mb-4">
+            <a
+              href="mailto:ananthu9526official@gmail.com"
+              className="font-ovo text-sm text-gray-500 hover:text-purple-600 transition-colors"
+            >
+              ananthu9526official@gmail.com
+            </a>
+            <a
+              href="tel:+919526952719"
+              className="font-ovo text-sm text-gray-500 hover:text-purple-600 transition-colors"
+            >
+              +91 95269 52719
+            </a>
           </div>
           <p className="font-ovo text-sm">
             © {new Date().getFullYear()} Ananthu K S. All rights reserved.
