@@ -86,35 +86,12 @@ export const assets = {
     right_arrow_bold_dark
 };
 
-export const workData = [
-    {
-        title: 'Devden',
-        description: 'Social Media Web App',
-        bgImage: '/work-1.png',
-        link: 'https://devden.ananthuks.online/'
-    },
-    {
-        title: 'Otaku Hub',
-        description: 'E-commerce',
-        bgImage: '/work-2.png',
-        link: 'https://otaku-hub.ananthuks.online/'
-    },
-]
-
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Full-Stack Web & App Development', description: 'Custom websites and apps built end-to-end to match your business needs', link: '' },
-    { icon: assets.ui_icon, title: 'Responsive UI Design', description: 'Clean, modern, mobile-friendly interfaces designed for smooth user experience', link: '' },
-    { icon: assets.api_icon, title: 'API & Database Integration', description: 'Reliable backend systems with seamless data flow and secure integrations', link: '' },
-    { icon: assets.auth_icon, title: 'Authentication & Security', description: 'Strong and secure user access systems with industry-standard protection', link: '' },
-    { icon: assets.deploy_icon, title: 'Deployment & Optimization', description: 'Fast and optimized deployments with performance tuning and SEO improvements', link: '' },
-]
-
-export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Skills', description: 'HTML, CSS, JavaScript, TypeScript, AJAX, Jquery, GSAP, React Js, Next Js, Node Js, Express Js, MongoDB, SQL, AWS, Redux, Web Sockets, DSA, Firebase, Microservices, Lighthouse, SEO, Sanity CMS' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Pursuing Bachelors in Computer Applications' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built 2 industry-level projects from scratch and contributed to 30+ open-source contributions on GitHub.' }
-];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.aws, assets.docker, assets.postman
+    assets.vscode, assets.mongodb, assets.git, assets.postman, assets.aws, assets.docker, assets.firebase, assets.figma
+];
+
+export const skillsData = [
+    'JavaScript', 'React.js', 'Next.js', 'Node.js', 'Express.js', 'MongoDB',
+    'REST APIs', 'Redux', 'Tailwind CSS', 'Git', 'SQL', 'Sanity CMS', 'AWS'
 ];
