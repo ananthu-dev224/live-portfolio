@@ -71,7 +71,7 @@ const Navbar = () => {
           <Image
             src={assets.logo}
             className="w-28 cursor-pointer mr-14"
-            alt="logo"
+            alt="Ananthu K S"
           />
         </a>
 
