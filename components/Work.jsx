@@ -42,7 +42,7 @@ const Work = () => {
       <SectionHeading
         label="My Journey"
         title="Work Experience"
-        description="Nearly 2 years of full-time industry experience across 20+ production projects."
+        description="Nearly 3 years of industry experience across 25+ projects — integrating AI into applications and working with AI agents."
         className="mb-16"
       />
 

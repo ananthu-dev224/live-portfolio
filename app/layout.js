@@ -14,7 +14,7 @@ const ovo = Ovo({
 const siteUrl = "https://ananthuks.online";
 const siteTitle = "Ananthu K S | Software Engineer";
 const siteDescription =
-  "Software Engineer with nearly 2 years of experience across 20+ production projects. Currently at Onbyz, building web applications with JavaScript, React, and Node.js.";
+  "Software Engineer with nearly 3 years of experience across 25+ projects. Building with JavaScript, React, and Node.js — integrating AI into applications and working with AI agents.";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -26,6 +26,7 @@ const jsonLd = {
       name: siteTitle,
       description: siteDescription,
       inLanguage: "en-IN",
+      publisher: { "@id": `${siteUrl}/#person` },
     },
     {
       "@type": "Person",
@@ -37,6 +38,15 @@ const jsonLd = {
       description: siteDescription,
       email: "ananthu9526official@gmail.com",
       telephone: "+919526952719",
+      knowsAbout: [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "MERN Stack",
+        "AI Integration",
+        "AI Agents",
+        "Full Stack Development",
+      ],
       address: {
         "@type": "PostalAddress",
         addressLocality: "Thrissur",
@@ -49,10 +59,6 @@ const jsonLd = {
         "https://twitter.com/dev_aks224",
         "https://instagram.com/___ananthu__",
       ],
-      worksFor: {
-        "@type": "Organization",
-        name: "Onbyz",
-      },
     },
     {
       "@type": "ProfilePage",
@@ -66,6 +72,15 @@ const jsonLd = {
   ],
 };
 
+export const viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#111111" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -73,6 +88,7 @@ export const metadata = {
     template: "%s | Ananthu K S",
   },
   description: siteDescription,
+  applicationName: "Ananthu K S Portfolio",
   keywords: [
     "Ananthu K S",
     "Software Engineer",
@@ -81,8 +97,11 @@ export const metadata = {
     "React Developer",
     "Node.js Developer",
     "JavaScript Developer",
+    "AI Integration",
+    "AI Agents",
     "Web Developer India",
     "Software Engineer Kerala",
+    "Thrissur Developer",
     "Portfolio",
   ],
   authors: [{ name: "Ananthu K S", url: siteUrl }],
@@ -90,19 +109,23 @@ export const metadata = {
   publisher: "Ananthu K S",
   category: "technology",
   alternates: {
-    canonical: siteUrl,
+    canonical: "/",
   },
   formatDetection: {
-    email: true,
-    telephone: true,
+    email: false,
+    address: false,
+    telephone: false,
   },
   openGraph: {
-    type: "website",
+    type: "profile",
     locale: "en_IN",
     url: siteUrl,
     siteName: "Ananthu K S",
     title: siteTitle,
     description: siteDescription,
+    firstName: "Ananthu",
+    lastName: "K S",
+    username: "ananthu-dev224",
     images: [
       {
         url: "/og-image.png",
@@ -129,13 +152,19 @@ export const metadata = {
       follow: true,
       "max-image-preview": "large",
       "max-snippet": -1,
+      "max-video-preview": -1,
     },
+  },
+  appleWebApp: {
+    title: "Ananthu K S",
+    capable: true,
+    statusBarStyle: "default",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en-IN" className="scroll-smooth">
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`}
       >

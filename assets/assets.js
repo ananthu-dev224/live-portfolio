@@ -6,6 +6,11 @@ import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
+import cursor from './cursor.svg';
+import cpanel from './cpanel.svg';
+import claude from './claude.svg';
+import sanity from './sanity.svg';
+import vercel from './vercel.svg';
 import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
@@ -50,6 +55,11 @@ export const assets = {
     project_icon,
     project_icon_dark,
     vscode,
+    cursor,
+    cpanel,
+    claude,
+    sanity,
+    vercel,
     firebase,
     figma,
     git,
@@ -88,10 +98,11 @@ export const assets = {
 
 
 export const toolsData = [
-    assets.vscode, assets.mongodb, assets.git, assets.postman, assets.aws, assets.docker, assets.firebase, assets.figma
+    assets.vscode, assets.cursor, assets.claude, assets.mongodb, assets.git, assets.postman, assets.aws, assets.docker, assets.cpanel, assets.sanity, assets.vercel, assets.firebase, assets.figma
 ];
 
 export const skillsData = [
     'JavaScript', 'React.js', 'Next.js', 'Node.js', 'Express.js', 'MongoDB',
-    'REST APIs', 'Redux', 'Tailwind CSS', 'Git', 'SQL', 'Sanity CMS', 'AWS'
+    'REST APIs', 'Redux', 'Tailwind CSS', 'Git', 'SQL', 'Sanity CMS', 'AWS',
+    'Cursor', 'Claude'
 ];

@@ -10,28 +10,21 @@ import {
 } from "@/components/AnimatedSection";
 
 const stats = [
-  { value: "2+", label: "Years Experience" },
-  { value: "20+", label: "Projects Delivered" },
-  { value: "Onbyz", label: "Current Company" },
+  { value: "3+", label: "Years Experience" },
+  { value: "25+", label: "Projects Delivered" },
+  { value: "AI-Native", label: "Direction" },
 ];
 
 function AboutBio() {
   return (
-    <>
-      <p className="font-ovo text-gray-700 leading-relaxed mb-4">
-        I&apos;m a Software Engineer with nearly 2 years of professional
-        experience building scalable web applications. I work primarily with
-        JavaScript, React, and Node.js — delivering production-ready features,
-        optimizing performance, and maintaining clean, maintainable codebases.
-      </p>
-      <p className="font-ovo text-gray-600 leading-relaxed text-sm sm:text-base">
-        Currently at{" "}
-        <span className="text-gray-800 font-medium">Onbyz</span>, where I
-        develop service-based applications and content-driven platforms.
-        Previously at Trusttech IT Solutions, working across multiple client
-        projects in the Forex trading space.
-      </p>
-    </>
+    <p className="font-ovo text-gray-700 leading-relaxed max-w-3xl">
+      I started writing code at 15 and got interested in building software.
+      Now I&apos;m 21 — a Software Engineer with nearly 3 years of professional
+      experience building scalable web applications. I work primarily with
+      JavaScript, React, and Node.js, integrating AI into products, working with
+      AI agents, and shipping production-ready features. Currently exploring
+      products with AI. Feel free to connect with me.
+    </p>
   );
 }
 
