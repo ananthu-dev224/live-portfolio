@@ -66,7 +66,7 @@ const Header = () => {
               />
             </a>
             <a
-              href="/ananthuks_cv_2026.pdf"
+              href="/Ananthu_KS_CV.pdf"
               download
               className="btn-primary inline-flex items-center gap-2 px-5 py-2 text-sm rounded-full border border-black text-black hover:bg-black hover:text-white transition-colors"
             >
