@@ -18,12 +18,7 @@ const stats = [
 function AboutBio() {
   return (
     <p className="font-ovo text-gray-700 leading-relaxed max-w-3xl">
-      I started writing code at 15 and got interested in building software.
-      Now I&apos;m 21 — a Software Engineer with nearly 3 years of professional
-      experience building scalable web applications. I work primarily with
-      JavaScript, React, and Node.js, integrating AI into products, working with
-      AI agents, and shipping production-ready features. Currently exploring
-      products with AI. Feel free to connect with me.
+      Software Engineer with nearly 3 years of experience building scalable web applications and software products. Skilled in JavaScript, React, and Node.js, with a focus on AI integration, AI agents, and production-ready solutions. Currently exploring and building AI-powered products.
     </p>
   );
 }
@@ -112,10 +107,10 @@ const About = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-5 sm:p-6 rounded-2xl border border-dashed border-gray-300 bg-gray-50/50">
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">
-              Outside of work
+              Currently
             </p>
             <p className="font-ovo text-sm sm:text-base text-gray-600">
-              Founder of{" "}
+              Founder,{" "}
               <a
                 href="https://enovixtech.in"
                 target="_blank"
@@ -124,7 +119,7 @@ const About = () => {
               >
                 Enovix Tech
               </a>
-              — a freelance development team I run alongside my full-time role.
+              {" "}— leading a freelance software team, delivering client projects end-to-end.
             </p>
           </div>
           <a

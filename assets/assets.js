@@ -104,5 +104,5 @@ export const toolsData = [
 export const skillsData = [
     'JavaScript', 'React.js', 'Next.js', 'Node.js', 'Express.js', 'MongoDB',
     'REST APIs', 'Redux', 'Tailwind CSS', 'Git', 'SQL', 'Sanity CMS', 'AWS',
-    'Cursor', 'Claude'
+    'Wix Studio', 'Cursor', 'Claude'
 ];

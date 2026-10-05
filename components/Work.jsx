@@ -8,14 +8,28 @@ import {
 
 const experiences = [
   {
+    role: "Founder & Software Team Lead",
+    company: "Enovix Tech",
+    duration: "January 2026 – Present",
+    type: "Freelance",
+    contributions: [
+      "Running a freelance software team, managing end-to-end client engagements from discovery to delivery.",
+      "Handling client meetings, requirement gathering, project scoping, and ongoing communication.",
+      "Leading marketing efforts and business development to acquire and retain clients.",
+      "Overseeing project management — sprint planning, timelines, and team coordination.",
+      "Delivered 5+ software products across web and mobile, covering product engineering and deployment.",
+    ],
+    stack: ["Client Management", "Project Management", "Marketing", "Business Development", "Team Leadership", "Product Thinking"],
+  },
+  {
     role: "Software Engineer",
     company: "Onbyz",
-    duration: "January 2026 – Present",
+    duration: "January 2026 – September 2026",
     type: "Full-time",
     contributions: [
-      "Developing and maintaining scalable service-based web applications using Next.js and the MERN stack.",
-      "Architecting dynamic content-driven platforms integrated with Headless CMS solutions.",
-      "Building production-ready features, optimizing performance, and maintaining high code quality standards.",
+      "Developed and maintained scalable service-based web applications using Next.js and the MERN stack.",
+      "Architected dynamic content-driven platforms integrated with Headless CMS solutions.",
+      "Built production-ready features, optimized performance, and maintained high code quality standards.",
     ],
     stack: ["JavaScript", "React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "SQL", "Sanity CMS"],
   },
@@ -42,7 +56,7 @@ const Work = () => {
       <SectionHeading
         label="My Journey"
         title="Work Experience"
-        description="Nearly 3 years of industry experience across 25+ projects — integrating AI into applications and working with AI agents."
+        description="3+ years of industry experience across 25+ projects — from full-time engineering roles to founding and leading a freelance software team."
         className="mb-16"
       />
 
